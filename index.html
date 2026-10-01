@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <title>Aulora — Organização inteligente para quem ensina.</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            dark: {
+              950: '#050508',
+              900: '#0a0a0f',
+              800: '#12121a',
+              700: '#1a1a24',
+              600: '#22222e',
+              500: '#2a2a38',
+            },
+            accent: {
+              blue: '#3b82f6',
+              purple: '#8b5cf6',
+              cyan: '#22d3ee',
+              pink: '#ec4899',
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          },
+          boxShadow: {
+            'glow': '0 0 20px rgba(59, 130, 246, 0.15)',
+            'glow-purple': '0 0 20px rgba(139, 92, 246, 0.15)',
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=9">
+</head>
+<body class="bg-dark-950 text-gray-100 font-sans antialiased overflow-hidden">
+  <div id="app" class="h-screen w-screen flex">
+    <div id="loading-screen" class="fixed inset-0 bg-dark-950 flex items-center justify-center z-50">
+      <div class="text-center">
+        <div class="w-16 h-16 border-4 border-accent-blue border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
+        <p class="text-gray-400 text-sm">Carregando Aulora...</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/storage.js?v=9"></script>
+  <script src="js/models.js?v=9"></script>
+  <script src="js/ai.js?v=9"></script>
+  <script src="js/map.js?v=9"></script>
+  <script src="js/app.js?v=9"></script>
+</body>
+</html>
